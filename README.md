@@ -1,1 +1,0 @@
-# proyecto-talento-tech
