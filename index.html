@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YayitaStore</title>
+
+    <link rel="icon" href="../proyectoWeb/img/logo500x500 sin fondo.png">
+    <link rel="stylesheet" href="../proyectoWeb/style-index.css">
+</head>
+
+<body>
+
+    <!-- Barra de navegación -->
+    <heder class="heder">
+        <div class="logo">
+            <img src="../proyectoWeb/img/logo500x500 sin fondo.png" alt="logo500x500">
+        </div>
+        <nav class="nav">
+            <ul class="nav-link">
+                <li><a chref="#inicio">Inicio</a></li>
+                <li><a href="#tienda">Tienda</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+            </ul>
+        </nav>
+        <a href="https://whatsapp.com" class="btn"><button>Contacto</button></a>
+
+        <!-- Menú  -->
+        <a onclick="openNav()" class="menu" href="#"><button>Menu</button></a>
+
+        <div class="overlay" id="mobile-menu">
+            <a onclick="closeNav()" href="" class="close">&times;</a>
+            <div class="overlay-content">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#tienda">Tienda</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+            </div>
+        </div>
+    </heder>
+    <!-- Sección de Inicio -->
+    <section class="inicio">
+
+        <div class="inicio-text container" id="inicio">
+            <h1>YayitaStore</h1>
+            <p class="txt-p">Descubre el equilibrio perfecto entre moda, comodidad y sofisticación en YayitaShoes.
+                Nuestra tienda
+                virtual ofrece una selección exclusiva de zapatos diseñados para realzar tu estilo en cada paso. Desde
+                tacones elegantes hasta calzado casual con un toque de glamour, aquí encontrarás lo que necesitas para
+                brillar en cualquier ocasión.</p>
+        </div>
+    </section>
+
+    <!-- Sección de productos -->
+    <section class="container top-categories" id="tienda">
+        <h2 class="titulo-2">Mejores Categorias </h2>
+        <div class="productos-container">
+            <div class="card-producto productoHombre">
+                <p>Hombre</p>
+                <span>Ver mas</span>
+            </div>
+            <div class="card-producto productoMujer">
+                <p>Mujer</p>
+                <span>Ver mas</span>
+            </div>
+            <div class="card-producto productoNiño">
+                <p>Niño</p>
+                <span>Ver mas</span>
+
+            </div>
+    </section>
+    <section class="contariner top-productos">
+        <h2 class="titulo-2">Mejores Productos</h2>
+
+        <div class="container-opcion">
+            <span class="active">Destacados</span>
+            <span>Ofertas</span>
+            <span>Más vendidos</span>
+        </div>
+        <div class="container-product">
+            <!--producto 1 -->
+            <div class="card-product">
+                <div class="container-img">
+                    <img src="../proyectoWeb/img/productos/airmax.jpeg" alt="airmax">
+                    <span class="discount">13%</span>
+                    <div class="button-grup">
+                        <span>
+                            <i class="fa-regular fa-eye"></i>
+                        </span>
+                        <span>
+                            <i class="fa-regular fa-heart"></i>
+                        </span>
+                        <span>
+                            <i class="fa-regular fa-code-compare"></i>
+                        </span>
+                    </div>
+                </div>
+                <div class="content-card-product">
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <h3>Airmax</h3>
+                    <div class="add-cart">
+                        <span>
+                            <i class="fa-solid fa-shopping-cart"></i>
+                        </span>
+                    </div>
+                    <p class="price"> $ 100.000 <span>$120.000</span></p>
+                </div>
+            </div>
+            <div class="card-product">
+                <div class="container-img">
+                    <img src="../proyectoWeb/img/productos/airmax.jpeg" alt="airmax">
+                    <span class="discount">-13%</span>
+                    <div class="button-grup">
+                        <span>
+                            <i class="fa-regular fa-eye"></i>
+                        </span>
+                        <span>
+                            <i class="fa-regular fa-heart"></i>
+                        </span>
+                        <span>
+                            <i class="fa-solid fa-code-compare"></i>
+                        </span>
+                    </div>
+                </div>
+                <div class="content-card-product">
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <h3>Airmax</h3>
+                    <div class="add-cart">
+                        <span>
+                            <i class="fa-solid fa-shopping-cart"></i>
+                        </span>
+                    </div>
+                    <p class="price"> $ 100.000 <span>$120.000</span></p>
+                </div>
+            </div>
+            <div class="card-product">
+                <div class="container-img">
+                    <img src="../proyectoWeb/img/productos/campus.jpeg" alt="airmax">
+                    <span class="discount">-13%</span>
+                    <div class="button-grup">
+                        <span>
+                            <i class="fa-regular fa-eye"></i>
+                        </span>
+                        <span>
+                            <i class="fa-regular fa-heart"></i>
+                        </span>
+                        <span>
+                            <i class="fa-solid fa-code-compare"></i>
+                        </span>
+                    </div>
+                </div>
+                <div class="content-card-product">
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <h3>campus</h3>
+                    <div class="add-cart">
+                        <span>
+                            <i class="fa-solid fa-shopping-cart"></i>
+                        </span>
+                    </div>
+                    <p class="price"> $ 100.000 <span>$120.000</span></p>
+                </div>
+            </div>
+            <div class="card-product">
+                <div class="container-img">
+                    <img src="../proyectoWeb/img/productos/airmax.jpeg" alt="airmax">
+                    <span class="discount">-13%</span>
+                    <div class="button-grup">
+                        <span>
+                            <i class="fa-regular fa-eye"></i>
+                        </span>
+                        <span>
+                            <i class="fa-regular fa-heart"></i>
+                        </span>
+                        <span>
+                            <i class="fa-solid fa-code-compare"></i>
+                        </span>
+                    </div>
+                </div>
+                <div class="content-card-product">
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <h3>Airmax</h3>
+                    <div class="add-cart">
+                        <span>
+                            <i class="fa-solid fa-shopping-cart"></i>
+                        </span>
+                    </div>
+                    <p class="price"> $ 100.000 <span>$120.000</span></p>
+                </div>
+            </div>
+            <div class="card-product">
+                <div class="container-img">
+                    <img src="../proyectoWeb/img/productos/airmax.jpeg" alt="airmax">
+                    <span class="discount">-13%</span>
+                    <div class="button-grup">
+                        <span>
+                            <i class="fa-regular fa-eye"></i>
+                        </span>
+                        <span>
+                            <i class="fa-regular fa-heart"></i>
+                        </span>
+                        <span>
+                            <i class="fa-solid fa-code-compare"></i>
+                        </span>
+                    </div>
+                </div>
+                <div class="content-card-product">
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <h3>Airmax</h3>
+                    <div class="add-cart">
+                        <span>
+                            <i class="fa-solid fa-shopping-cart"></i>
+                        </span>
+                    </div>
+                    <p class="price"> $ 100.000 <span>$120.000</span></p>
+                </div>
+            </div>
+            <div class="card-product">
+                <div class="container-img">
+                    <img src="../proyectoWeb/img/productos/airmax.jpeg" alt="airmax">
+                    <span class="discount">13%</span>
+                    <div class="button-grup">
+                        <span>
+                            <i class="fa-regular fa-eye"></i>
+                        </span>
+                        <span>
+                            <i class="fa-regular fa-heart"></i>
+                        </span>
+                        <span>
+                            <i class="fa-solid fa-code-compare"></i>
+                        </span>
+                    </div>
+                </div>
+                <div class="content-card-product">
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <h3>Airmax</h3>
+                    <div class="add-cart">
+                        <span>
+                            <i class="fa-solid fa-shopping-cart"></i>
+                        </span>
+                    </div>
+                    <p class="price"> $ 100.000 <span>$120.000</span></p>
+                </div>
+            </div>
+            <div class="card-product">
+                <div class="container-img">
+                    <img src="../proyectoWeb/img/productos/airmax.jpeg" alt="airmax">
+                    <span class="discount">-13%</span>
+                    <div class="button-grup">
+                        <span>
+                            <i class="fa-regular fa-eye"></i>
+                        </span>
+                        <span>
+                            <i class="fa-regular fa-heart"></i>
+                        </span>
+                        <span>
+                            <i class="fa-solid fa-code-compare"></i>
+                        </span>
+                    </div>
+                </div>
+                <div class="content-card-product">
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <h3>Airmax</h3>
+                    <div class="add-cart">
+                        <span>
+                            <i class="fa-solid fa-shopping-cart"></i>
+                        </span>
+                    </div>
+                    <p class="price"> $ 100.000 <span>$120.000</span></p>
+                </div>
+            </div>
+            <div class="card-product">
+                <div class="container-img">
+                    <img src="../proyectoWeb/img/productos/airmax.jpeg" alt="airmax">
+                    <span class="discount">-13%</span>
+                    <div class="button-grup">
+                        <span>
+                            <i class="fa-regular fa-eye"></i>
+                        </span>
+                        <span>
+                            <i class="fa-regular fa-heart"></i>
+                        </span>
+                        <span>
+                            <i class="fa-solid fa-code-compare"></i>
+                        </span>
+                    </div>
+                </div>
+                <div class="content-card-product">
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <h3>Airmax</h3>
+                    <div class="add-cart">
+                        <span>
+                            <i class="fa-solid fa-shopping-cart"></i>
+                        </span>
+                    </div>
+                    <p class="price"> $ 100.000 <span>$120.000</span></p>
+                </div>
+            </div>
+            <!--producto 2 -->
+            <div class="card-product">
+                <div class="container-img">
+                    <img src="../proyectoWeb/img/productos/armani.JPG" alt="armani">
+                    <span class="discount">-13%</span>
+                    <div class="button-grup">
+                        <span>
+                            <i class="fa-regular fa-eye"></i>
+                        </span>
+                        <span>
+                            <i class="fa-regular fa-heart"></i>
+                        </span>
+                        <span>
+                            <i class="fa-solid fa-code-compare"></i>
+                        </span>
+                    </div>
+                </div>
+                <div class="content-card-product">
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <h3>Armani</h3>
+                    <div class="add-cart">
+                        <span>
+                            <i class="fa-solid fa-shopping-cart"></i>
+                        </span>
+
+                    </div>
+                    <p class="price"> $ 110.000 <span>$130.000</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de nosotros -->
+    <section class="nosotros" id="nosotros">
+        <h2 class="titulo-2 ">Nosotros</h2>
+        <div class="nosotros-text">
+            <p class="txt-p">En YayitaStore, nos apasiona la moda y la calidad. Por eso, nos esforzamos por ofrecerte un
+                calzado que no solo sea hermoso, sino también cómodo y duradero. Nuestros zapatos están diseñados para
+                realzar tu estilo y brindarte la confianza que necesitas para enfrentar el día a día con elegancia y
+                seguridad. Descubre nuestra colección y encuentra el par perfecto para ti.</p>
+        </div>
+    </section>
+    <!-- Sección de contacto -->
+    <footer class="footer">
+        <div class="container container-footer">
+            <div class="menu-footer">
+                <div class="contact-info">
+                    <p class="title-footer">
+                        Información de contacto
+                    </p>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Cucúta, Colombia</li>
+                        <li><i class="fas fa-phone-alt"></i> +57 123 456 7890</li>
+                        <li><i class="fas fa-envelope"></i>YayitaShoes@gmail.com</li>
+                    </ul>
+                    <div class="social-icons">
+                        <span class="facebook"><i class="fa-brands fa-facebook"></i></span>
+                        <span class="instagram"><i class="fa-brands fa-instagram"></i></span>
+                        <span class="twitter"><i class="fa-brands fa-x-twitter"></i></span>
+                        <span class="youtube"><i class="fa-brands fa-youtube"></i></span>
+                        <span class="pinterest"><i class="fa-brands fa-pinterest"></i></span>
+                    </div>
+                </div>
+                <div class="infomation">
+                    <p class="title-footer">
+                        Información
+                    </p>
+                    <ul>
+                        <li><a href="#">Sobre nosotros</a></li>
+                        <li><a href="#">Política de privacidad</a></li>
+                        <li><a href="#">Términos y condiciones</a></li>
+                        <li><a href="#">Política de devolución</a></li>
+                        <li><a href="#">contactanos</a></li>
+
+                    </ul>
+                </div>
+                <div class="my-account">
+                    <p class="title-footer">Mi cuenta</p>
+
+                    <ul>
+                        <li><a href="#">Mi cuenta</a></li>
+                        <li><a href="#">Historial de ordenes</a></li>
+                        <li><a href="#">Lista de deseos</a></li>
+                        <li><a href="#">Boletín</a></li>
+                        <li><a href="#">Reembolsos</a></li>
+                    </ul>
+                </div>
+
+                <div class="newsletter">
+                    <p class="title-footer">Boletín informativo</p>
+
+                    <div class="content">
+                        <p>
+                            Suscríbete a nuestros boletines ahora y mantente al
+                            día con nuevas colecciones y ofertas exclusivas.
+                        </p>
+                        <input type="email" placeholder="Ingresa el correo aquí...">
+                        <button>Suscríbete</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p>
+                    Desarrollado por YayitaShoes &copy; 2025. Todos los derechos reservados.
+                </p>
+
+                <img src="img/mercadopago.png" alt="Pagos">
+            </div>
+        </div>
+    </footer>
+    <script src="nav.js"></script>
+    <script src="https://kit.fontawesome.com/5bd6468e3f.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
