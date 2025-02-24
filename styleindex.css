@@ -192,7 +192,7 @@ header .overlay .close {
 .inicio {
     background-image: linear-gradient(rgba(243, 194, 209, 0.5),
             rgba(0, 0, 0, 0.5)),
-        url(../proyectoWeb/img/shoes-666059_1920.jpg);
+        url(img/shoes-666059_1920.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -269,7 +269,7 @@ header .overlay .close {
 }
 
 .productoHombre {
-    background-image: linear-gradient(#f5979780, #3d3c3c60), url('../proyectoWeb/img/zapatocategorie1.webp');
+    background-image: linear-gradient(#f5979780, #3d3c3c60), url('img/zapatocategorie1.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -279,7 +279,7 @@ header .overlay .close {
 }
 
 .productoMujer {
-    background-image: linear-gradient(#f5979780, #3d3c3c60), url('../proyectoWeb/img/mujer.webp');
+    background-image: linear-gradient(#f5979780, #3d3c3c60), url('img/mujer.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -287,7 +287,7 @@ header .overlay .close {
 }
 
 .productoNiño {
-    background-image: linear-gradient(#f5979780, #3d3c3c60), url('../proyectoWeb/img/zapatocategorie.webp');
+    background-image: linear-gradient(#f5979780, #3d3c3c60), url('img/zapatocategorie.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -512,7 +512,7 @@ header .overlay .close {
 .nosotros {
     background-image: linear-gradient(rgba(243, 194, 209, 0.5),
             rgba(0, 0, 0, 0.5)),
-        url(../proyectoWeb/img/fondo.png);
+        url(/img/fondo.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
