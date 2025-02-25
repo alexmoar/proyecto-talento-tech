@@ -15,7 +15,7 @@ body {
 }
 
 /* ! cambio de color para la barra de navegacion */
-.heder {
+.heder{
     background-color: #ffd5dd;
     display: flex;
     justify-content: space-between;
@@ -57,6 +57,7 @@ body {
 
 .heder .nav-link li:hover,
 .overlay a:hover {
+    
     font-weight: 700;
     transform: scale(1.1);
 }
@@ -65,13 +66,22 @@ body {
 .heder .nav-link li a:hover {
     color: #f87b92;
 }
-
+ul{
+    list-style: none;
+}
 .menu {
     display: none;
 }
 
-.heder .btn button,
-.heder .menu button {
+.heder .btn,
+.heder .menu {
+    color: #ffc0cb;
+    padding: 9px 25px;
+    background-color: #403033;
+    border: none;
+    border-radius: 50px;
+}
+.menu{
     color: #ffc0cb;
     padding: 9px 25px;
     background-color: #403033;
@@ -79,8 +89,8 @@ body {
     border-radius: 50px;
 }
 
-.heder .btn button:hover,
-.heder .menu button:hover {
+.heder .btn:hover,
+.heder .menu:hover {
     background-color: #ffc0cb;
     color: #403033;
     transform: scale(1.1);
@@ -102,6 +112,7 @@ body {
 /* Estilos de la sección menu */
 .heder a {
     text-decoration: none;
+    list-style: none;
 
 }
 
@@ -126,7 +137,7 @@ body {
     justify-content: center;
 }
 
-.heder .overlay a {
+.heder .overlay  a {
     list-style: none;
     padding: 15px;
     font-size: 36px;
