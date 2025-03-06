@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: montserrat;
+    background: linear-gradient(to right, #fdedec, #fdfefe);
+    height: 100vh;
+}   
+.registro-producto{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.registro-producto h1{
+    text-align: center;
+    padding: 0 0 20px;
+    padding-top: 10px;
+    border-bottom:  1px solid #e5e5e5;
+}
+.registro-producto form{
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+.registro-producto form .nombre-producto,
+.registro-producto form .precio-producto,
+.registro-producto form .descripcion-producto,
+.registro-producto form .imagen-producto{
+    margin: 20px 0;
+}
+.registro-producto form .nombre-producto input,
+.registro-producto form .precio-producto input,
+.registro-producto form .descripcion-producto textarea,
+.registro-producto form .imagen-producto input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #e5e5e5;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+}
+.registro-producto form .nombre-producto input{
+    margin-bottom: 10px;
+}
+.registro-producto form .precio-producto input{
+    margin-top: 10px;
+}
+.registro-producto form button{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #e5e5e5;
+    border-radius: 50px;
+    outline: none;
+    font-size: 18px;
+    background: linear-gradient(to right, #f05972, #ffc0cb );
+    color: white;
+    cursor: pointer;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+ 
+}   
+.registro-producto form button:hover{
+    background: linear-gradient(to right, #ffc0cb, #f05972);
+}
+.producto{
+    position: relative;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 900px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.producto h2{
+    text-align: center;
+    padding: 0 0 20px;
+    padding-top: 10px;
+    border-bottom:  1px solid #e5e5e5;
+}
+.producto table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+.producto table th,
+.producto table td{
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #e5e5e5;
+}
+.producto table th{
+    background-color: #f05972;
+    color: white;
+}
+.producto table tr:nth-child(even){
+    background-color: #f8f4e0;
+}

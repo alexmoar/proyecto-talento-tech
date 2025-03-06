@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: montserrat;
+    background: linear-gradient(to right, #fdedec, #fdfefe);
+    height: 100vh;
+}
+.formulario{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.formulario h1{
+    text-align: center;
+    padding: 0 0 20px;
+    padding-top: 10px;
+    border-bottom:  1px solid #e5e5e5;
+}
+.formulario form{
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+.formulario form .username,
+.formulario form .password{
+    margin: 20px 0;
+}
+.formulario form .username input,
+.formulario form .password input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #e5e5e5;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+}
+.formulario form .username input{
+    margin-bottom: 10px;
+}
+.formulario form .password input{
+    margin-top: 10px;
+}
+.formulario form button{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #e5e5e5;
+    border-radius: 50px;
+    outline: none;
+    font-size: 18px;
+    background: linear-gradient(to right, #f05972, #ffc0cb );
+    color: white;
+    cursor: pointer;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+ 
+}   
+.formulario form button:hover{
+    background: linear-gradient(to right, #ffc0cb, #f05972);
+}
