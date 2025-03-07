@@ -24,27 +24,61 @@ button.addEventListener('click', function(event) {
         password.value = ''
     }
 })
-// registro de producto la informacio se enviara al local storage
-const nombreProductos = [], precioProductos  = [], descripcionProductos = [], imagenProductos = []
-const buttonRegistro = document.getElementById('button-registro')
-buttonRegistro.addEventListener('click', functionREgistro );
-function functionREgistro(){
-    const nombreProducto = document.querySelector('#nombre-producto').value,
-    precioProducto = document.querySelector('#precio-producto').value,
-    descripcionProducto = document.querySelector('#descripcion-producto').value,
-    imagenProducto = document.querySelector('#imagen-producto').files[0];
 
-    nombreProductos.push(nombreProducto);
-    precioProductos.push(precioProducto);
-    descripcionProductos.push(descripcionProducto);
-    imagenProductos.push(imagenProducto);
+// registro de productos 
+const formularioRegistro = document.getElementById('formulario-registro')
+formularioRegistro.addEventListener('submit', function(event) {
+    console.log('registro');
+
+})      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// registro de producto la informacio se enviara al local storage
+// const nombreProductos = [], precioProductos  = [], descripcionProductos = [], imagenProductos = []
+// const buttonRegistro = document.getElementById('button-registro')
+// buttonRegistro.addEventListener('click', functionREgistro );
+// function functionREgistro(){
+//     const nombreProducto = document.querySelector('#nombre-producto').value,
+//     precioProducto = document.querySelector('#precio-producto').value,
+//     descripcionProducto = document.querySelector('#descripcion-producto').value,
+//     imagenProducto = document.querySelector('#imagen-producto').files[0];
+
+//     nombreProductos.push(nombreProducto);
+//     precioProductos.push(precioProducto);
+//     descripcionProductos.push(descripcionProducto);
+//     imagenProductos.push(imagenProducto);
     
   //  localStorage.setItem('nombre', JSON.stringify(nombreProductos));
   //  localStorage.setItem('precio', JSON.stringify(precioProductos));
  //   localStorage.setItem('descripcion', JSON.stringify(descripcionProductos));
   //  localStorage.setItem('imagen', JSON.stringify(imagenProductos));
     
-}
+ //}
 
 
 
@@ -52,27 +86,3 @@ function functionREgistro(){
      
 
 
-// consumo de la api
-const api = 'https://api.escuelajs.co/api/v1/products'
-fetch(api)
-    .then(res => res.json())
-    .then(data => {
-        console.log(data)
-        const tabla = document.getElementById('')
-        data.forEach(producto => {
-            const tr = document.createElement('tr')
-            const td1 = document.createElement('td')
-            const td2 = document.createElement('td')
-            const td3 = document.createElement('td')
-            const td4 = document.createElement('td')
-            td1.innerText = producto.title
-            td2.innerText = producto.price
-            td3.innerText = producto.description
-            td4.innerText = producto.images
-            tr.appendChild(td1)
-            tr.appendChild(td2)
-            tr.appendChild(td3)
-            tr.appendChild(td4)
-            tabla.appendChild(tr)
-        })
-    })
