@@ -4,19 +4,24 @@
     box-sizing: border-box;
 }
 body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     font-family: montserrat;
     background: linear-gradient(to right, #fdedec, #fdfefe);
     height: 100vh;
 }   
 .registro-producto{
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 500px;
     background: white;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 150px;
 }
 .registro-producto h1{
     text-align: center;
@@ -52,6 +57,7 @@ body{
     margin-top: 10px;
 }
 .registro-producto form button{
+    
     width: 100%;
     padding: 10px;
     border: 1px solid #e5e5e5;
@@ -70,10 +76,11 @@ body{
     background: linear-gradient(to right, #ffc0cb, #f05972);
 }
 .producto{
-    position: relative;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+   margin-top: 80px;
+    justify-content: center;
+    top: 30%;
+    left: 100%;
+  
     width: 900px;
     background: white;
     border-radius: 10px;

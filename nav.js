@@ -25,37 +25,54 @@ button.addEventListener('click', function(event) {
     }
 })
 // registro de producto la informacio se enviara al local storage
-const nombreProducto = document.getElementById('nombre-producto')
-const precioProducto = document.getElementById('precio-producto')
-const descripcionProducto = document.getElementById('descripcion-producto')
-const imagenProducto = document.getElementById('imagen-producto')
-const buttonRegistro = document.getElementById('button')
+const nombreProductos = [], precioProductos  = [], descripcionProductos = [], imagenProductos = []
+const buttonRegistro = document.getElementById('button-registro')
+buttonRegistro.addEventListener('click', functionREgistro );
+function functionREgistro(){
+    const nombreProducto = document.querySelector('#nombre-producto').value,
+    precioProducto = document.querySelector('#precio-producto').value,
+    descripcionProducto = document.querySelector('#descripcion-producto').value,
+    imagenProducto = document.querySelector('#imagen-producto').files[0];
 
-buttonRegistro.addEventListener('click', function(event) {
-    event.preventDefault()
-    const nombre = nombreProducto.value
-    const precio = precioProducto.value
-    const descripcion = descripcionProducto.value
-    const imagen = imagenProducto.files[0]
-    localStorage.setItem('nombre', nombre)
-    localStorage.setItem('precio', precio)
-    localStorage.setItem('descripcion', descripcion)
-    localStorage.setItem('imagen', imagen)
+    nombreProductos.push(nombreProducto);
+    precioProductos.push(precioProducto);
+    descripcionProductos.push(descripcionProducto);
+    imagenProductos.push(imagenProducto);
     
-})
+  //  localStorage.setItem('nombre', JSON.stringify(nombreProductos));
+  //  localStorage.setItem('precio', JSON.stringify(precioProductos));
+ //   localStorage.setItem('descripcion', JSON.stringify(descripcionProductos));
+  //  localStorage.setItem('imagen', JSON.stringify(imagenProductos));
+    
+}
+
+
 
 //mostra los productos que se han registrado en registroProduto.html
-function mostrarRegistro() {
-    const nombre = localStorage.getItem('nombre')
-    const precio = localStorage.getItem('precio')
-    const descripcion = localStorage.getItem('descripcion')
-    const imagen = localStorage.getItem('imagen')
-    document.getElementById('nombre-producto').value = nombre
-    document.getElementById('precio-producto').value = precio
-    document.getElementById('descripcion-producto').value = descripcion
-    document.getElementById('imagen-producto').files[0] = imagen
-}   
-mostrarRegistro()
+     
 
 
-  
+// consumo de la api
+const api = 'https://api.escuelajs.co/api/v1/products'
+fetch(api)
+    .then(res => res.json())
+    .then(data => {
+        console.log(data)
+        const tabla = document.getElementById('')
+        data.forEach(producto => {
+            const tr = document.createElement('tr')
+            const td1 = document.createElement('td')
+            const td2 = document.createElement('td')
+            const td3 = document.createElement('td')
+            const td4 = document.createElement('td')
+            td1.innerText = producto.title
+            td2.innerText = producto.price
+            td3.innerText = producto.description
+            td4.innerText = producto.images
+            tr.appendChild(td1)
+            tr.appendChild(td2)
+            tr.appendChild(td3)
+            tr.appendChild(td4)
+            tabla.appendChild(tr)
+        })
+    })

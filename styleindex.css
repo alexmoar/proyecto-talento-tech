@@ -742,6 +742,8 @@ footer .container-footer {
         height: 50px; /* Reducir el tamaño del logo en móviles */
     }
 }
+
+
 @media screen and (max-width: 768px) {
     .inicio h1 {
         font-size: 2rem; /* Reducir el tamaño del título en móviles */
